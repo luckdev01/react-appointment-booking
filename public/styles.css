@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+h2 {
+    width: 100%;
+    margin: 15px 0;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+button {
+    margin: 10px 0;
+    background: #ebebeb;
+    background-image: linear-gradient(to bottom, #6e6e6e, #000000);
+    color: #ffffff;
+    font-size: 15px;
+    padding: 4px;
+    text-decoration: none;
+    width: 150px;
+}
+
+button:hover {
+    background: #dedede;
+    background-image: linear-gradient(to bottom, #4f4f4f, #000000);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+input {
+    width: 150px;
+}
+
+a {
+    color: black;
+}
+
+article {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+select {
+    width: 150px;
+    height: 23px;
+}
+
+textarea {
+    width: 240px;
+    height: 40px;
+}
+
+.welcome-image {
+    width: 100%;
+}
+
+.welcome-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.welcome-input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+}
+
+.welcome-link {
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(0, 0, 0, 1) 15%,
+        rgba(0, 0, 0, 1) 85%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.header-title {
+    margin-left: 10px;
+    margin-right: auto;
+    color: white;
+}
+
+.header-logo {
+    display: inline-block;
+
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.header-link {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    background-color: #4d4d4d;
+}
+
+.active {
+    background-color: #4d4d4d;
+}
+
+.user-image-icon {
+    position: relative;
+}
+
+.user-image {
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 100;
+    margin-right: 10px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.user-upload-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.upload-image-container {
+    position: fixed;
+    padding: 25px;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(0, 0, 0, 1) 5%,
+        rgba(0, 0, 0, 1) 95%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    z-index: 300;
+}
+
+.upload-image-copy {
+    margin-left: 6px;
+}
+
+.upload-image-closer {
+    font-size: 18px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.upload-image-input {
+    width: 100%;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.appointment-options-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.timeslot-container {
+    display: flex;
+}
+
+.warning-message {
+    color: red;
+}
+
+.patients-all-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.patients-one-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    flex: 0 0 25%;
+}
+
+.schedule-container {
+    position: relative;
+}
+
+.schedule-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.schedule-name {
+    font-size: 14px;
+    position: absolute;
+    background-color: white;
+    bottom: 2px;
+    right: 0px;
+}
+
+.schedule-timeslot {
+    text-align: center;
+    font-size: 18px;
+}
