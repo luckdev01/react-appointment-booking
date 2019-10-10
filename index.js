@@ -275,6 +275,4 @@ app.get("*", (request, response) => {
     }
 });
 
-app.listen(8080, function() {
-    console.log("App is listening.");
-});
+server.listen(process.env.PORT || 8080, () => console.log("App is listening!"));
