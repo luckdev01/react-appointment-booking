@@ -28,7 +28,7 @@ export default class App extends React.Component {
             <BrowserRouter>
                 <div>
                     <header className="header-container">
-                        <img src="/doctor-logo.jpg" className="header-logo" />
+                        <img src="/doctor-logo.png" className="header-logo" />
                         <p className="header-title">
                             Medical appointments platform
                         </p>
