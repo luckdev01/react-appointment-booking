@@ -26,8 +26,8 @@ p {
 button {
     margin: 10px 0;
     background: #ebebeb;
-    background-image: linear-gradient(to bottom, #6e6e6e, #000000);
-    color: #ffffff;
+    background-image: linear-gradient(to bottom, #6e6e6e, #ffffff);
+    color: #000000;
     font-size: 15px;
     padding: 4px;
     text-decoration: none;
@@ -36,7 +36,7 @@ button {
 
 button:hover {
     background: #dedede;
-    background-image: linear-gradient(to bottom, #4f4f4f, #000000);
+    background-image: linear-gradient(to bottom, #4f4f4f, #ffffff);
     text-decoration: none;
     cursor: pointer;
 }
@@ -58,8 +58,8 @@ a {
 
 article {
     margin-top: 20px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     width: 41%;
     margin-left: auto;
     margin-right: auto;
@@ -97,7 +97,7 @@ textarea {
 }
 
 .welcome-link {
-    color: white;
+    color: black;
 }
 
 .header-container {
@@ -106,9 +106,8 @@ textarea {
     height: 70px;
     background: linear-gradient(
         180deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(0, 0, 0, 1) 15%,
-        rgba(0, 0, 0, 1) 85%,
+        rgba(110, 110, 110, 1) 0%,
+        rgba(180, 180, 180, 1) 50%,
         rgba(255, 255, 255, 1) 100%
     );
 }
@@ -116,7 +115,7 @@ textarea {
 .header-title {
     margin-left: 10px;
     margin-right: auto;
-    color: white;
+    color: black;
 }
 
 .header-logo {
@@ -129,17 +128,17 @@ textarea {
 }
 
 .header-link {
-    color: white;
+    color: black;
     margin: 10px;
     text-decoration: none;
 }
 
 .header-link:hover {
-    background-color: #4d4d4d;
+    background-color: #4f4f4f;
 }
 
 .active {
-    background-color: #4d4d4d;
+    background-color: #6e6e6e;
 }
 
 .user-image-icon {
@@ -170,7 +169,7 @@ textarea {
 .upload-image-container {
     position: fixed;
     padding: 25px;
-    color: white;
+    color: black;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
