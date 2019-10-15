@@ -11,7 +11,7 @@ The medical appointments platform will save both time and money on scheduling. T
 ## Preview
 
 <p align="center">
-<img src="/public/appointment-booking-platform-preview.png" alt="Preview of the Appointment Booking Platform”>
+<img src="/public/appointment-booking-platform-preview.png" alt="Preview of the Appointment Booking Platform">
 </p>
 
 ## Features for patients
