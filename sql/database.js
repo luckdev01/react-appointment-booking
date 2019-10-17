@@ -37,7 +37,7 @@ exports.getUserData = id => {
     return database
         .query(
             `
-            SELECT id, forename, surname, image, biography, krankenkasse_name, krankenkasse_coverage, surgery, hospital, medication, diseases, recommendations, important, history
+            SELECT id, forename, surname, image, krankenkasse_name, krankenkasse_coverage, surgery, hospital, medication, diseases, recommendations, important, history
             FROM users
             WHERE id IN ($1)
             ;`,
@@ -186,7 +186,7 @@ exports.addInformationAsDoctor = (
             SET history = ($2),
             recommendations = ($3)
             WHERE id IN ($1)
-            returning id, forename, surname, image, biography, krankenkasse_name, krankenkasse_coverage, surgery, hospital, medication, diseases, recommendations, important, history
+            returning id, forename, surname, image, krankenkasse_name, krankenkasse_coverage, surgery, hospital, medication, diseases, recommendations, important, history
             ;`,
             [userId, patientHistory, patientRecommendations]
         )
