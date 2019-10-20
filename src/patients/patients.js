@@ -19,10 +19,21 @@ export default function FindPatients() {
         };
     }, [searchQuery]);
 
+    if (!userList) {
+        return <p>Page loading...</p>;
+    }
+
     return (
         <div>
             <h1>Patient finder</h1>
+            <p>
+                It's important to be able to find your patients on the platform.
+                On their profile it's possible to see the medical information
+                they provided. You can also add their medical history and your
+                medical recommendations.
+            </p>
             <h2>Find a patient:</h2>
+
             <input
                 name="userInput"
                 onChange={event => setSearchQuery(event.target.value)}
@@ -46,7 +57,7 @@ export default function FindPatients() {
                                             e.target.src = "/patient-icon.jpg";
                                         }}
                                     />
-                                    <p>
+                                    <p className="patients-copy">
                                         {user.forename} {user.surname}
                                     </p>
                                 </Link>
@@ -76,7 +87,7 @@ export default function FindPatients() {
                                             e.target.src = "/patient-icon.jpg";
                                         }}
                                     />
-                                    <p>
+                                    <p className="patients-copy">
                                         {user.forename} {user.surname}
                                     </p>
                                 </Link>

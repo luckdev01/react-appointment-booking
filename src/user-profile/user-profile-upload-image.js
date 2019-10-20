@@ -31,20 +31,22 @@ export default class UploadImage extends React.Component {
             <div className="upload-image-container">
                 <div
                     onClick={this.props.hideUploadOption}
-                    className="upload-image-closer"
+                    className="upload-image-closer-container"
                 >
-                    <p>X</p>
+                    <p className="upload-image-closer-copy">X</p>
                 </div>
                 <p className="upload-image-copy">
                     Want to change your profile image?
                 </p>
-                <input
-                    onChange={this.uploadImage}
-                    name="file"
-                    type="file"
-                    accept="image/*"
-                    className="upload-image-input"
-                />
+                <label className="upload-image-label">
+                    <input
+                        onChange={this.uploadImage}
+                        name="file"
+                        type="file"
+                        accept="image/*"
+                        className="upload-image-input"
+                    />
+                </label>
                 {this.state.uploadMessage && <p>Image is being uploaded...</p>}
             </div>
         );

@@ -8,6 +8,7 @@ export default function AppointmentsTimeslot({ timeslots, userId }) {
     return (
         <div>
             <button
+                className="appointment-button"
                 onClick={e => dispatch(bookAppointment(timeslots.id, userId))}
             >
                 {timeNotation}

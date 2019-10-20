@@ -46,7 +46,10 @@ export default class Registration extends React.Component {
                         </div>
                     )}
                 </div>
-                <p>Feel free to join our medical appointment platform:</p>
+                <p className="welcome-copy">
+                    Feel free to join our Medical Appointment Platform. Sign up
+                    as a new patient and create a free account below:
+                </p>
                 <label className="welcome-label">
                     First name:
                     <input
@@ -80,7 +83,7 @@ export default class Registration extends React.Component {
                         className="welcome-input"
                     />
                 </label>
-                <button onClick={this.createAccount}>
+                <button onClick={this.createAccount} className="welcome-button">
                     Create free account
                 </button>
                 <p>

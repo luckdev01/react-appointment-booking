@@ -44,7 +44,11 @@ export default class Login extends React.Component {
                         </div>
                     )}
                 </div>
-                <p>Log in to the medical appointment platform:</p>
+                <p className="welcome-copy">
+                    Welcome to our Medical Appointment Platform. Please log in
+                    to the medical appointment platform to start booking an
+                    appointment:
+                </p>
                 <label className="welcome-label">
                     Email address:
                     <input
@@ -62,7 +66,9 @@ export default class Login extends React.Component {
                         className="welcome-input"
                     />
                 </label>
-                <button onClick={this.userLogin}>Log in</button>
+                <button onClick={this.userLogin} className="welcome-button">
+                    Log in
+                </button>
                 <p>
                     Not an account yet? Please{" "}
                     <Link to="/" className="welcome-link">
