@@ -7,7 +7,9 @@ export default function Welcome() {
     return (
         <HashRouter>
             <article>
-                <h4>Medical platform for booking appointments</h4>
+                <h1 className="welcome-header">
+                    Medical platform for booking appointments
+                </h1>
                 <img src="/doctor-logo.jpg" className="welcome-image" />
                 <div>
                     <Route exact path="/" component={Registration} />

@@ -87,7 +87,7 @@ export default function Appointments({ id: userId }) {
                 appointments.
             </p>
             <div>
-                <h3>Your appointment:</h3>
+                <h2>Your appointment:</h2>
                 <p>
                     {showAppointment ||
                         "You currently have no appointment. Please click on a timeslot below to book your appointment:"}
@@ -113,7 +113,7 @@ export default function Appointments({ id: userId }) {
             </div>
             <div className="appointment-options-container">
                 <div>
-                    <h2>Weekday:</h2>
+                    <h4>Weekday:</h4>
                     <select
                         name="preferredDay"
                         onChange={event => setWeekDay(event.target.value)}
@@ -127,7 +127,7 @@ export default function Appointments({ id: userId }) {
                     </select>
                 </div>
                 <div>
-                    <h2>At the earliest:</h2>
+                    <h4>From:</h4>
                     <select
                         name="preferredBeginTime"
                         onChange={event => setStartTime(event.target.value)}
@@ -140,7 +140,7 @@ export default function Appointments({ id: userId }) {
                     </select>
                 </div>
                 <div>
-                    <h2>Until:</h2>
+                    <h4>Until:</h4>
                     <select
                         name="preferredEndTime"
                         onChange={event => setEndTime(event.target.value)}
@@ -153,7 +153,7 @@ export default function Appointments({ id: userId }) {
                     </select>
                 </div>
                 <div>
-                    <h2>Type:</h2>
+                    <h4>Type:</h4>
                     <select
                         name="preferredTime"
                         onChange={event =>

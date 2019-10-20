@@ -65,6 +65,11 @@ export default class PatientsProfile extends React.Component {
                         {this.state.surname}
                     </h1>
                 </div>
+                <p>
+                    Here you can view information a patient has provided
+                    themselves. You can add a medical history and
+                    recommendations.
+                </p>
                 <div>
                     <img
                         className="profile-image"

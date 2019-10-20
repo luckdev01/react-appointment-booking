@@ -30,7 +30,7 @@ export default class App extends React.Component {
                     <header className="header-container">
                         <img src="/doctor-logo.png" className="header-logo" />
                         <p className="header-title">
-                            Medical appointments platform
+                            Medical Appointments Platform
                         </p>
                         <nav>
                             <NavLink
