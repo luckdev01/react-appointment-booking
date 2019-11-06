@@ -16,29 +16,30 @@ const s3 = new aws.S3({
 exports.upload = (request, response, next) => {
     const { file } = request;
     if (!file) {
-        console.log("Multer failed inside s3.js");
+        console.log("multer failed inside s3.js");
         return response.sendStatus(500);
     }
     const { filename, mimetype, size, path } = request.file;
 
-    const promise = s3
-        .putObject({
-            Bucket: "spicedling",
-            ACL: "public-read",
-            Key: filename,
-            Body: fs.createReadStream(path),
-            ContentType: mimetype,
-            ContentLength: size
-        })
+    s3.putObject({
+        Bucket: "appointment-booking-platform",
+        ACL: "public-read",
+        Key: filename,
+        Body: fs.createReadStream(path),
+        ContentType: mimetype,
+        ContentLength: size
+    })
         .promise()
         .then(data => {
-            console.log("data: ", data);
+            fs.unlink(path, error => {
+                if (error) {
+                    return;
+                }
+            });
             next();
         })
         .catch(error => {
-            console.log("error: ", error);
-        })
-        .then(() => {
-            fs.unlink(path, callback => callback);
+            console.log("error inside s3.putObject: ", error);
+            response.sendSatus(500);
         });
 };
