@@ -50,21 +50,25 @@ export default class Login extends React.Component {
                     appointment:
                 </p>
                 <label className="welcome-label">
-                    Email address:
-                    <input
-                        name="email"
-                        onChange={this.userInput}
-                        className="welcome-input"
-                    />
+                    Email:
+                    <div>
+                        <input
+                            name="email"
+                            onChange={this.userInput}
+                            className="welcome-input"
+                        />
+                    </div>
                 </label>
                 <label className="welcome-label">
                     Password:
-                    <input
-                        name="password"
-                        type="password"
-                        onChange={this.userInput}
-                        className="welcome-input"
-                    />
+                    <div>
+                        <input
+                            name="password"
+                            type="password"
+                            onChange={this.userInput}
+                            className="welcome-input"
+                        />
+                    </div>
                 </label>
                 <button onClick={this.userLogin} className="welcome-button">
                     Log in

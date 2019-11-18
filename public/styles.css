@@ -20,6 +20,7 @@ h2 {
 h3 {
     font-size: 16px;
     color: #410275;
+    margin: 15px 0;
 }
 
 h4 {
@@ -34,27 +35,22 @@ p {
 
 button {
     margin: 10px 0;
-    background: #ebebeb;
-    background-image: linear-gradient(to bottom, #aaaaaa, #ffffff);
+    background: white;
     color: #000000;
     font-size: 14px;
     padding: 4px;
     text-decoration: none;
-    width: 100%;
 }
 
 button:hover {
-    background: #dedede;
-    background-image: linear-gradient(to bottom, #757575, #ffffff);
+    background: #aaaaaa;
     text-decoration: none;
     cursor: pointer;
 }
 
 section {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    width: 42%;
+    margin: 0 auto;
 }
 
 a {
@@ -65,14 +61,13 @@ article {
     margin-top: 20px;
     background-color: white;
     color: black;
-    width: 41%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
 }
 
 select {
-    width: 150px;
+    width: 140px;
     height: 23px;
 }
 
@@ -81,73 +76,112 @@ textarea {
     height: 40px;
 }
 
+input {
+    margin: 5px auto;
+}
+
 .welcome-image {
     width: 45%;
     height: 45%;
-}
-
-.welcome-label {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    text-align: right;
-    width: 400px;
-    line-height: 26px;
-    margin-bottom: 10px;
-}
-
-.welcome-input {
-    height: 20px;
-    flex: 0 0 200px;
-    margin-left: 10px;
-}
-
-.welcome-button {
-    width: auto;
 }
 
 .welcome-link {
     color: black;
 }
 
-.header-container {
+header {
+    height: 90px;
+    background-color: white;
+}
+
+.header-logo-title-container {
     display: flex;
-    align-items: center;
-    height: 70px;
-    background: linear-gradient(
-        180deg,
-        rgba(117, 117, 117) 0%,
-        rgba(255, 255, 255) 100%
-    );
+    justify-content: center;
 }
 
 .header-title {
-    margin-left: 10px;
-    margin-right: auto;
+    font-weight: bold;
+    font-size: 20px;
     color: #410275;
+    margin: auto 5px;
 }
 
 .header-logo {
     display: inline-block;
-    padding: 5px;
     width: 50px;
     height: 50px;
-    margin-left: 10px;
+    margin: 5px;
+}
+
+nav {
+    text-align: center;
+    width: 42%;
+    margin: 0 auto;
+}
+
+.header-link-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0) 0%,
+        rgba(255, 255, 255) 15%,
+        rgba(255, 255, 255) 85%,
+        rgba(0, 0, 0) 100%
+    );
 }
 
 .header-link {
+    font-size: 16px;
+    font-weight: bold;
     color: black;
-    margin: 10px;
+    padding: 10px;
     text-decoration: none;
 }
 
 .header-link:hover {
-    background-color: #666666;
+    text-decoration: underline;
 }
 
 .active {
-    background-color: #999999;
+    color: black;
     text-decoration: underline;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0) 0%,
+        rgba(255, 255, 255) 5%,
+        rgba(255, 255, 255) 95%,
+        rgba(0, 0, 0) 100%
+    );
+}
+
+.appointment-book-button {
+    width: 140px;
+}
+
+.appointment-cancel-button {
+    width: 140px;
+}
+
+.appointment-options-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.timeslot-container {
+    display: flex;
+}
+
+.warning-message {
+    color: red;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    filter: grayscale(100%);
 }
 
 .user-image-icon {
@@ -208,27 +242,6 @@ textarea {
     cursor: pointer;
 }
 
-.profile-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    filter: grayscale(100%);
-}
-
-.appointment-options-container {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.timeslot-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.warning-message {
-    color: red;
-}
-
 .patients-all-container {
     display: flex;
     flex-wrap: wrap;
@@ -244,11 +257,12 @@ textarea {
 
 .schedule-container {
     position: relative;
+    margin: 0 10px;
 }
 
 .schedule-image {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     filter: grayscale(100%);
 }
@@ -263,142 +277,65 @@ textarea {
 
 .schedule-timeslot {
     text-align: center;
-    font-size: 12px;
 }
 
-@media (max-device-width: 767px) {
-    .welcome-header {
-        font-size: 32px;
-    }
+.schedule-button {
+    width: 140px;
+    text-align: center;
+}
 
-    .welcome-label {
-        display: inline;
-        font-size: 40px;
-        height: 50px;
-        line-height: inherit;
-    }
-
-    .welcome-copy {
-        font-size: 20px;
-    }
-
-    .welcome-input {
-        margin: 15px 0;
-        height: 50px;
-        font-size: 40px;
-        width: 100%;
-    }
-
-    .header-container {
-        height: 160px;
-    }
-
-    .header-link {
-        font-size: 30px;
-    }
-
-    .header-title {
-        font-size: 30px;
-    }
-
-    .header-logo {
-        width: 100px;
-        height: 100px;
-        margin-left: 40px;
-    }
-
-    .user-image {
-        width: 100px;
-        height: 100px;
+@media only screen and (max-width: 768px) {
+    article {
+        width: 96%;
     }
 
     section {
-        width: 90%;
+        width: 96%;
     }
 
-    article {
-        width: 90%;
-    }
-
-    .upload-image-container {
-        width: 600px;
-        height: 350px;
-    }
-
-    .upload-image-closer-container {
-        font-size: 50px;
-    }
-
-    .upload-image-closer-copy {
-        font-size: 50px;
-    }
-
-    .upload-image-copy {
-        font-size: 40px;
-    }
-
-    .upload-image-input {
-        font-size: 40px;
-    }
-
-    button {
-        font-size: 38px;
-    }
-
-    .timeslot-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .appointment-button {
-        height: 80px;
+    nav {
+        width: 96%;
     }
 
     select {
-        font-size: 38px;
-        height: 50px;
-        width: 100%;
+        width: 150px;
+    }
+
+    .header-title {
+        font-size: 16px;
+    }
+
+    .header-logo-title-container {
+        justify-content: flex-start;
+    }
+
+    .header-link {
+        font-size: 12px;
+        padding: 8px;
     }
 
     .appointment-options-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        flex-wrap: wrap;
     }
 
-    input {
-        width: 300px;
-        height: 50px;
-        font-size: 50px;
+    .appointment-book-button {
+        width: 96%;
     }
 
-    .profile-image {
-        width: 700px;
-        height: 700px;
+    .appointment-cancel-button {
+        width: 96%;
     }
 
-    .patients-copy {
-        font-size: 50px;
-        text-align: center;
-        margin-bottom: 50px;
+    .timeslot-container {
+        flex-direction: column;
     }
 
     .schedule-container {
-        margin: 30px 0;
+        margin: 0 auto;
+        width: 120px;
     }
 
-    .schedule-image {
-        width: 700px;
-        height: 700px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .schedule-name {
-        margin-top: 10px;
-        text-align: center;
-        bottom: auto;
-        right: auto;
-        position: inherit;
+    .schedule-button {
+        width: 100%;
     }
 }

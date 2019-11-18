@@ -51,37 +51,45 @@ export default class Registration extends React.Component {
                     as a new patient and create a free account below:
                 </p>
                 <label className="welcome-label">
-                    First name:
-                    <input
-                        name="forename"
-                        onChange={this.userInput}
-                        className="welcome-input"
-                    />
+                    Forename:
+                    <div>
+                        <input
+                            name="forename"
+                            onChange={this.userInput}
+                            className="welcome-input"
+                        />
+                    </div>
                 </label>
                 <label className="welcome-label">
-                    Last name:
-                    <input
-                        name="surname"
-                        onChange={this.userInput}
-                        className="welcome-input"
-                    />
+                    Surname:
+                    <div>
+                        <input
+                            name="surname"
+                            onChange={this.userInput}
+                            className="welcome-input"
+                        />
+                    </div>
                 </label>
                 <label className="welcome-label">
-                    Email address:
-                    <input
-                        name="email"
-                        onChange={this.userInput}
-                        className="welcome-input"
-                    />
+                    Email:
+                    <div>
+                        <input
+                            name="email"
+                            onChange={this.userInput}
+                            className="welcome-input"
+                        />
+                    </div>
                 </label>
                 <label className="welcome-label">
                     Password:
-                    <input
-                        name="password"
-                        type="password"
-                        onChange={this.userInput}
-                        className="welcome-input"
-                    />
+                    <div>
+                        <input
+                            name="password"
+                            type="password"
+                            onChange={this.userInput}
+                            className="welcome-input"
+                        />
+                    </div>
                 </label>
                 <button onClick={this.createAccount} className="welcome-button">
                     Create free account
