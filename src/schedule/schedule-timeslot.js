@@ -27,6 +27,7 @@ export default function ScheduleTimeslot({ timeslots }) {
                 {timeslots.appointment_type || "regular"} visit
             </p>
             <button
+                className="schedule-button"
                 onClick={e => dispatch(cancelPatientAppointment(timeslots.id))}
             >
                 Cancel

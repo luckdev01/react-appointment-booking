@@ -6,9 +6,9 @@ export default function AppointmentsTimeslot({ timeslots, userId }) {
     const dispatch = useDispatch();
     let timeNotation = `${timeslots.appointment_start}:00 - ${timeslots.appointment_end}:00`;
     return (
-        <div>
+        <div className="appointment-button-container">
             <button
-                className="appointment-button"
+                className="appointment-book-button"
                 onClick={e => dispatch(bookAppointment(timeslots.id, userId))}
             >
                 {timeNotation}

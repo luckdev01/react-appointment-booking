@@ -27,51 +27,49 @@ export default class App extends React.Component {
         return (
             <BrowserRouter>
                 <div>
-                    <header className="header-container">
-                        <img src="/doctor-logo.png" className="header-logo" />
-                        <p className="header-title">
-                            Medical Appointments Platform
-                        </p>
-                        <nav>
-                            <NavLink
-                                exact
-                                to="/"
-                                className="header-link"
-                                activeClassName="active"
-                            >
-                                Appointments
-                            </NavLink>
-                            <NavLink
-                                to="/user-profile"
-                                className="header-link"
-                                activeClassName="active"
-                            >
-                                Profile
-                            </NavLink>
-                            <NavLink
-                                to="/patients"
-                                className="header-link"
-                                activeClassName="active"
-                            >
-                                Patients
-                            </NavLink>
-                            <NavLink
-                                to="/schedule"
-                                className="header-link"
-                                activeClassName="active"
-                            >
-                                Schedule
-                            </NavLink>
-                        </nav>
-                        <ProfilePicture
-                            displaySize={"50px"}
-                            forename={this.state.forename}
-                            surname={this.state.surname}
-                            image={this.state.image || "/patient-icon.jpg"}
-                            showUploadOption={() =>
-                                this.setState({ uploaderVisible: true })
-                            }
-                        />
+                    <header>
+                        <div className="header-logo-title-container">
+                            <img
+                                src="/doctor-logo.png"
+                                className="header-logo"
+                            />
+                            <p className="header-title">
+                                Medical Appointments Platform
+                            </p>
+                        </div>
+                        <div>
+                            <nav className="header-link-container">
+                                <NavLink
+                                    exact
+                                    to="/"
+                                    className="header-link"
+                                    activeClassName="active"
+                                >
+                                    Appointments
+                                </NavLink>
+                                <NavLink
+                                    to="/user-profile"
+                                    className="header-link"
+                                    activeClassName="active"
+                                >
+                                    Profile
+                                </NavLink>
+                                <NavLink
+                                    to="/patients"
+                                    className="header-link"
+                                    activeClassName="active"
+                                >
+                                    Patients
+                                </NavLink>
+                                <NavLink
+                                    to="/schedule"
+                                    className="header-link"
+                                    activeClassName="active"
+                                >
+                                    Schedule
+                                </NavLink>
+                            </nav>
+                        </div>
                     </header>
                     <section>
                         <Route

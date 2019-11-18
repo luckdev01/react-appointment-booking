@@ -74,7 +74,9 @@ export default function Appointments({ id: userId }) {
         }
     ${userAppointment.year}, ${userAppointment.weekday} from
     ${userAppointment.appointment_start}:00
-    until ${userAppointment.appointment_end}:00. Please add it to your calendar.
+    until ${
+    userAppointment.appointment_end
+}:00. Please add it to your personal calendar.
     `;
     }
 
@@ -94,6 +96,7 @@ export default function Appointments({ id: userId }) {
                 </p>
                 {showAppointment && (
                     <button
+                        className="appointment-cancel-button"
                         onClick={e =>
                             dispatch(cancelAppointment(userAppointment.id))
                         }
