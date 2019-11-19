@@ -11,15 +11,15 @@ h3,
 h4 {
     margin: 15px 0;
     color: #410275;
-    font-family: "Alegreya", serif;
+    font-family: "PT Sans", sans-serif;
 }
 
 h1 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h3 {
@@ -106,6 +106,7 @@ header {
     font-size: 20px;
     color: #410275;
     margin: auto 5px;
+    font-family: "PT Sans", sans-serif;
 }
 
 .header-logo {
@@ -133,7 +134,7 @@ nav {
     color: black;
     padding: 10px;
     text-decoration: none;
-    font-family: "Alegreya", serif;
+    font-family: "PT Sans", sans-serif;
 }
 
 .header-link:hover {
@@ -141,10 +142,9 @@ nav {
 }
 
 .active {
-    color: black;
-    text-decoration: underline;
     border-left: 1px solid;
     border-right: 1px solid;
+    color: #410275;
 }
 
 .appointment-book-button {
@@ -203,15 +203,12 @@ nav {
 .upload-image-container {
     position: fixed;
     padding: 25px;
+    border: 1px solid;
+    background-color: white;
     color: black;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(
-        180deg,
-        rgba(117, 117, 117) 0%,
-        rgba(255, 255, 255) 100%
-    );
     z-index: 300;
 }
 
@@ -290,6 +287,13 @@ nav {
 
     select {
         width: 150px;
+        background-color: #ffffff;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 400;
     }
 
     .header-title {
