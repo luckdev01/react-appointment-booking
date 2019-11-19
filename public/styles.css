@@ -1,32 +1,33 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 15px 0;
+    color: #410275;
+    font-family: "Alegreya", serif;
 }
 
 h1 {
-    font-size: 20px;
-    margin: 15px 0;
-    color: #410275;
+    font-size: 22px;
 }
 
 h2 {
-    font-size: 18px;
-    margin: 15px 0;
-    color: #410275;
+    font-size: 20px;
 }
 
 h3 {
     font-size: 16px;
-    color: #410275;
-    margin: 15px 0;
 }
 
 h4 {
     font-size: 14px;
-    margin: 15px 0;
-    color: #410275;
 }
 
 p {
@@ -92,6 +93,7 @@ input {
 header {
     height: 90px;
     background-color: white;
+    margin-bottom: 30px;
 }
 
 .header-logo-title-container {
@@ -123,13 +125,6 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: white;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0) 0%,
-        rgba(255, 255, 255) 15%,
-        rgba(255, 255, 255) 85%,
-        rgba(0, 0, 0) 100%
-    );
 }
 
 .header-link {
@@ -138,6 +133,7 @@ nav {
     color: black;
     padding: 10px;
     text-decoration: none;
+    font-family: "Alegreya", serif;
 }
 
 .header-link:hover {
@@ -147,13 +143,8 @@ nav {
 .active {
     color: black;
     text-decoration: underline;
-    background: linear-gradient(
-        90deg,
-        rgba(0, 0, 0) 0%,
-        rgba(255, 255, 255) 5%,
-        rgba(255, 255, 255) 95%,
-        rgba(0, 0, 0) 100%
-    );
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 .appointment-book-button {
