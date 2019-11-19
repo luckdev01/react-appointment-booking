@@ -88,7 +88,7 @@ export default function Appointments({ id: userId }) {
                 Start booking with us today to save time on scheduling your
                 appointments.
             </p>
-            <div>
+            <div className="appointment-status">
                 <h2>Your appointment:</h2>
                 <p>
                     {showAppointment ||
