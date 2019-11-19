@@ -70,6 +70,7 @@ article {
 select {
     width: 140px;
     height: 23px;
+    background-color: #ffffff;
 }
 
 textarea {
@@ -94,6 +95,9 @@ header {
     height: 90px;
     background-color: white;
     margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 400;
 }
 
 .header-logo-title-container {
@@ -126,6 +130,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: white;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .header-link {
@@ -142,9 +147,16 @@ nav {
 }
 
 .active {
-    border-left: 1px solid;
-    border-right: 1px solid;
+    border-bottom: 1px solid black;
     color: #410275;
+}
+
+.appointment-status {
+    position: sticky;
+    top: 95px;
+    z-index: 400;
+    background-color: white;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .appointment-book-button {
@@ -287,13 +299,6 @@ nav {
 
     select {
         width: 150px;
-        background-color: #ffffff;
-    }
-
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 400;
     }
 
     .header-title {
